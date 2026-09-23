@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barranquilla desde la raíz</title>
+    <link rel="icon" href="imagenes/logotipo.png" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="cabecera" id="cabecera">
+    <div class="cabecera_interior">
+      <a class="marca" href="#/inicio" aria-label="Barranquilla desde la raíz, ir al inicio">
+        <img src="imagenes/logotipo.png" alt="" width="40" height="40">
+        <span class="marca_texto">
+          <span class="marca_nombre">Barranquilla</span>
+          <span class="marca_lema">desde la raíz</span>
+        </span>
+      </a>
+
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-label="Abrir Menú">
+        <span class="menu-btn__barras"></span>
+      </button>
+
+      <nav class="nav" id="nav-principal" aria-label="Principal">
+        <ul>
+          <li><a href="#/inicio" data-nav="inicio">Inicio</a></li>
+          <li><a href="#/mapa" data-nav="mapa">Mapa</a></li>
+          <li><a href="#/barrios" data-nav="barrios">Barrios</a></li>
+          <li><a href="#/acerca" data-nav="acerca">Acerca de</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-section">
+        <div class="hero-content">
+          <div class="hero_texto">
+            <span class="eyebrow">Descubre la historia y el patrimonio de</span>
+            <h1>Barranquilla<br><span>desde la raíz.</span></h1>
+            <p>Explora sus barrios patrimoniales, conoce su historia, tradiciones y elementos culturales a través de un mapa interactivo.</p>
+            <a class="boton" href="#mapa">Explorar mapa <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"></path>></svg></a>
+          </div>
+          <div class="hero_imagen">
+            <img src="imagenes/inicio.jpeg" alt="Vista panorámica de Barranquilla con edificios históricos y modernos" width="600" height="400">
+          </div>
+      </div>
+      </div>
+    </section>
+  
+    
+    <section id="mapa" class="section map-section">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">Explora la ciudad</span>
+          <h2>Un mapa lleno de historias</h2>
+        </div>
+      </div>
+      <div class="map-layout">
+        <aside class="neighborhood-list">
+          <div class="list-header">
+            <span>Barrios patrimoniales</span>
+            <span id="neighborhoodCount">00</span>
+        </div>
+          <div id="neighborhoodButtons"></div>
+        </aside>
+        <div class="map-wrapper">
+          <div id="map" aria-label="Mapa interactivo de Barranquilla"></div>
+          <div class="map-note">Mapa base © OpenStreetMap contributors</div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
