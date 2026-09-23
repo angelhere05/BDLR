@@ -1,3 +1,11 @@
+const paginasBarrios = {
+    "El Prado": "barrio-01",
+    "Barrio Abajo": "barrio-02",
+    "Rebolo": "barrio-03",
+    "San Roque": "barrio-04",
+    "Centro Histórico": "barrio-05"
+};
+
 const map = L.map('map').setView([10.9685, -74.7813], 13);
 
 
@@ -120,7 +128,7 @@ fetch('barrios.geojson')
                 );
 
                 layer.on({
-
+                    
                     mouseover: function (e) {
 
                         const nombre = e.target.feature.properties.name;
@@ -130,6 +138,17 @@ fetch('barrios.geojson')
                     mouseout: function () {
 
                         restaurarBarrios();
+
+                    },
+
+                    click: function (e) {
+
+                        const nombre = e.target.feature.properties.name;
+                        const destino = paginasBarrios[nombre];
+
+                        if (destino) {
+                            window.location.hash = destino;
+                        }
 
                     }
 
@@ -186,7 +205,15 @@ fetch('barrios.json')
                 restaurarBarrios();
 
             });
+            boton.addEventListener('click', function () {
 
+                const destino = paginasBarrios[barrio.nombre];
+
+                if (destino) {
+                    window.location.hash = destino;
+                }
+
+            });
             contenedor.appendChild(boton);
 
         });
@@ -212,3 +239,46 @@ menuBtn.addEventListener("click", () => {
     );
 
 });
+
+function mostrarVista(destino) {
+
+    const esBarrio = destino.startsWith('barrio-');
+
+    document.querySelectorAll('.vista-barrio').forEach(function (vista) {
+        vista.hidden = true;
+    });
+
+    document.querySelectorAll('main > :not(.vista-barrio)').forEach(function (el) {
+        el.style.display = esBarrio ? 'none' : '';
+    });
+
+    if (esBarrio) {
+
+        const vista = document.getElementById('vista-' + destino);
+        if (vista) vista.hidden = false;
+        window.scrollTo(0, 0);
+
+    } else if (destino && destino !== 'inicio') {
+
+        const seccion = document.getElementById(destino);
+        if (seccion) {
+            requestAnimationFrame(function () {
+                seccion.scrollIntoView({ behavior: 'smooth' });
+            });
+        }
+
+    } else {
+        window.scrollTo(0, 0);
+    }
+
+}
+
+function manejarRuta() {
+
+    const destino = window.location.hash.replace('#', '').replace('/', '') || 'inicio';
+    mostrarVista(destino);
+
+}
+
+window.addEventListener('hashchange', manejarRuta);
+window.addEventListener('DOMContentLoaded', manejarRuta);
