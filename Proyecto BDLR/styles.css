@@ -33,6 +33,27 @@ body {
   background: var(--fondo);
 }
 
+/* Colores de cada barrio */
+.rebolo {
+  --color: var(--verde);
+}
+
+.san-roque {
+  --color: var(--azul);
+}
+
+.centro-historico {
+  --color: var(--rojo);
+}
+
+.barrio-abajo {
+  --color: var(--sol);
+}
+
+.el-prado {
+  --color: var(--morado);
+}
+
 img, svg { max-width: 100%; display: block; }
 
 h1, h2, h3 {
@@ -456,13 +477,12 @@ main:focus, h1:focus { outline: none; box-shadow: none; }
   border-radius: var(--radio); overflow: hidden; text-decoration: none; color: #fff;
   background: var(--noche);
 }
-.panel img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.panel::before {
-  content: ""; position: absolute; inset: 0;
-  background: linear-gradient(180deg, transparent 30%, rgba(15, 33, 64, 0.92) 100%);
-}
+.panel img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+.panel::before {content: ""; position: absolute; inset: 0; background: var(--color); opacity: 0; z-index: 1; transition: opacity 0.4s ease;}
+.paneles li:hover .panel::before,
+.paneles li:focus-within .panel::before {opacity: 0.35;}
 .panel::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 8px; background: var(--color); }
-.panel_texto { position: relative; padding: 1.2rem 1.2rem 1.6rem; }
+.panel_texto { position: relative;z-index: 2; padding: 1.2rem 1.2rem 1.6rem; }
 .panel h3 {color: #fff; margin-bottom: 0.3rem; font-size: 1.35rem; transition: font-size 0.3s ease;}
 .paneles li:hover .panel h3,
 .paneles li:focus-within .panel h3 {font-size: 2.5rem;}
