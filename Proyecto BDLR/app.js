@@ -316,6 +316,32 @@ menuBtn.addEventListener("click", () => {
 
 });
 
+document.querySelectorAll(".nav a").forEach(enlace => {
+
+    enlace.addEventListener("click", () => {
+
+        cabecera.classList.remove("abierto");
+
+        menuBtn.setAttribute("aria-expanded", "false");
+
+        menuBtn.setAttribute("aria-label", "Abrir menú");
+    });
+});
+
+document.addEventListener("click", (e) => {
+
+    if (
+        cabecera.classList.contains("abierto") &&
+        !cabecera.contains(e.target)
+    ) {
+        cabecera.classList.remove("abierto");
+
+        menuBtn.setAttribute("aria-expanded", "false");
+        menuBtn.setAttribute("aria-label", "Abrir menú");
+    }
+});
+
+
 function mostrarVista(destino) {
 
     const esBarrio = destino.startsWith('barrio-');
