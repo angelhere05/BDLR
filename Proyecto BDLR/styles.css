@@ -552,3 +552,10 @@ main:focus, h1:focus { outline: none; box-shadow: none; }
   padding: 2.5rem 2rem; text-align: center;
 }
 .cta-mapa p { color: #c9d5ea; }
+
+/* ---------------------------------------------------------------------- Pie */
+.pie { background: var(--noche); color: #c9d5ea; padding: 2rem 0 calc(2rem + env(safe-area-inset-bottom, 0px)); font-size: 0.95rem; }
+.pie_interior { width: min(100% - 2.5rem, var(--ancho)); margin-inline: auto; }
+.pie p { margin: 0 0 0.4rem; }
+.pie strong { color: #fff; }
+.pie a { color: var(--sol); }
