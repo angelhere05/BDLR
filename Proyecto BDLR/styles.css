@@ -103,7 +103,7 @@ main:focus, h1:focus { outline: none; box-shadow: none; }
 .cabecera::after {
   content: ""; display: block; height: 5px;
   background: linear-gradient(90deg,
-    var(--sol) 0 25%, var(--rojo) 25% 50%, var(--verde) 50% 75%, var(--azul) 75% 100%);
+    var(--sol) 0 20%, var(--rojo) 20% 40%, var(--verde) 40% 60%, var(--azul) 60% 80%, var(--morado) 80% 100%);
 }
 .cabecera_interior {
   width: min(100% - 2.5rem, var(--ancho)); margin-inline: auto;
