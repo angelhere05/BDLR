@@ -463,11 +463,64 @@ main:focus, h1:focus { outline: none; box-shadow: none; }
 }
 .panel::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 8px; background: var(--color); }
 .panel_texto { position: relative; padding: 1.2rem 1.2rem 1.6rem; }
-.panel h3 { color: #fff; margin-bottom: 0.3rem; font-size: 1.35rem; }
+.panel h3 {color: #fff; margin-bottom: 0.3rem; font-size: 1.35rem; transition: font-size 0.3s ease;}
+.paneles li:hover .panel h3,
+.paneles li:focus-within .panel h3 {font-size: 2.5rem;}
 .panel p { font-size: 0.95rem; margin: 0; color: #e6ecf7; max-height: 0; opacity: 0; overflow: hidden; transition: max-height 0.4s, opacity 0.4s; }
 .paneles li:hover .panel p, .paneles li:focus-within .panel p { max-height: 8rem; opacity: 1; }
 
+/* Responsive para paneles de barrios */
 
+@media (max-width: 900px) {
+  .paneles {
+    height: 380px;
+    gap: 0.5rem;
+  }
+
+  .paneles li:hover,
+  .paneles li:focus-within {
+    flex: 2;
+  }
+
+  .panel_texto {
+    padding: 1rem;
+  }
+
+  .panel h3 {
+    font-size: 1.2rem;
+  }
+
+  .panel p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .paneles {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 1rem;
+  }
+
+  .paneles li {
+    min-height: 260px;
+  }
+
+  .paneles li:hover,
+  .paneles li:focus-within {
+    flex: none;
+  }
+
+  .panel {
+    height: 260px;
+  }
+
+  .panel p {
+    max-height: none;
+    opacity: 1;
+  }
+}
 
 [hidden] { display: none !important; }
 
