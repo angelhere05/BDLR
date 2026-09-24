@@ -236,6 +236,15 @@ main:focus, h1:focus { outline: none; box-shadow: none; }
   color: var(--texto-suave);
 }
 
+/* Los controles de Leaflet quedan por debajo del encabezado */
+.leaflet-control-container {
+  z-index: 1 !important;
+}
+
+.leaflet-control {
+  z-index: 1 !important;
+}
+
 @media (max-width: 850px) {
   .map-layout {
     width: min(100% - 2rem, var(--ancho));
