@@ -1,17 +1,131 @@
 [
   {
-    "nombre": "El Prado"
+    "id": "barrio-01",
+    "nombre": "El Prado",
+    "color": "#7b3fa0",
+    "colorNombre": "Morado",
+    "descripcion": "Uno de los barrios más emblemáticos de Barranquilla, reconocido por sus grandes casonas republicanas, sus calles arborizadas y por ser el primer proyecto de \"ciudad jardín\" de la ciudad.",
+    "imagen": "imagenes/inicio.jpeg",
+    "altImagen": "Vista del barrio El Prado, Barranquilla",
+    "datos": {
+      "Fundación": "Década de 1920",
+      "Estilo arquitectónico": "Republicano / Ciudad jardín",
+      "Localidad": "Norte-Centro Histórico"
+    },
+    "historia": [
+      "El Prado nació como un proyecto urbanístico pensado para las familias de mayores recursos de Barranquilla en un momento de auge económico de la ciudad, ligado al comercio portuario sobre el río Magdalena. Se diseñó siguiendo el modelo de \"ciudad jardín\", con calles amplias, andenes arborizados y grandes zonas verdes, algo poco común en el resto de la ciudad en esa época.",
+      "Con el tiempo se convirtió en el barrio residencial de referencia de la élite barranquillera, y hoy conserva buena parte de esa identidad en sus mansiones, clubes sociales y edificaciones institucionales.",
+      "Nota: reemplaza o amplía este texto con la información específica que hayan recopilado para el proyecto."
+    ],
+    "destacados": [
+      {"titulo": "Arquitectura republicana", "descripcion": "Casonas de principios del siglo XX con influencias europeas, hoy protegidas como patrimonio."},
+      {"titulo": "Calles arborizadas", "descripcion": "Uno de los sectores con mayor cobertura vegetal urbana de Barranquilla."},
+      {"titulo": "Vida cultural", "descripcion": "Hogar de instituciones, galerías y espacios que mantienen viva la memoria del barrio."}
+    ],
+    "galeria": ["Agregar foto 1", "Agregar foto 2", "Agregar foto 3"]
   },
+
   {
-    "nombre": "Barrio Abajo"
+    "id": "barrio-02",
+    "nombre": "Barrio Abajo",
+    "color": "#f6b91b",
+    "colorNombre": "Amarillo",
+    "descripcion": "Uno de los barrios más antiguos de Barranquilla, reconocido como cuna de tradiciones del Carnaval y de la identidad popular de la ciudad.",
+    "imagen": "imagenes/inicio.jpeg",
+    "altImagen": "Vista del barrio Barrio Abajo, Barranquilla",
+    "datos": {
+      "Fundación": "Siglo XIX",
+      "Estilo arquitectónico": "Vernáculo caribeño",
+      "Localidad": "Centro-Occidente"
+    },
+    "historia": [
+      "Barrio Abajo es uno de los sectores fundacionales de Barranquilla, con calles trazadas desde el siglo XIX. Su nombre viene de su ubicación topográfica, en la parte baja de la ciudad hacia el río Magdalena, zona donde se asentaron desde muy temprano artesanos, comerciantes y familias que dieron forma a buena parte de la identidad popular barranquillera.",
+      "Es considerado por muchos como uno de los lugares de origen de tradiciones que hoy son símbolo del Carnaval de Barranquilla, con una fuerte presencia de grupos folclóricos y música tradicional.",
+      "Nota: reemplaza o amplía este texto con la información específica que hayan recopilado para el proyecto."
+    ],
+    "destacados": [
+      {"titulo": "Cuna del Carnaval", "descripcion": "Fuerte tradición de comparsas, danzas y grupos folclóricos que participan cada año en el Carnaval."},
+      {"titulo": "Casas tradicionales", "descripcion": "Viviendas de un piso con colores vivos, típicas de la arquitectura popular caribeña."},
+      {"titulo": "Identidad barrial", "descripcion": "Un fuerte sentido de comunidad y orgullo por sus raíces, transmitido de generación en generación."}
+    ],
+    "galeria": ["Agregar foto 1", "Agregar foto 2", "Agregar foto 3"]
   },
+
   {
-    "nombre": "Rebolo"
+    "id": "barrio-03",
+    "nombre": "Rebolo",
+    "color": "#1f8a5f",
+    "colorNombre": "Verde",
+    "descripcion": "Uno de los barrios más antiguos y populosos de Barranquilla, con una fuerte herencia cultural afrodescendiente y una vida comunitaria muy activa.",
+    "imagen": "imagenes/inicio.jpeg",
+    "altImagen": "Vista del barrio Rebolo, Barranquilla",
+    "datos": {
+      "Fundación": "Siglo XIX",
+      "Estilo arquitectónico": "Popular tradicional",
+      "Localidad": "Suroccidente"
+    },
+    "historia": [
+      "Rebolo es uno de los barrios fundacionales de Barranquilla, ubicado cerca de la ribera del río Magdalena. Creció históricamente como un sector obrero y portuario, habitado por familias trabajadoras que sostuvieron buena parte de la actividad comercial y fluvial de la ciudad en sus primeras décadas.",
+      "Tiene una fuerte herencia cultural afrodescendiente, visible hoy en sus tradiciones musicales, danzas y en la manera en que la comunidad vive el Carnaval de Barranquilla.",
+      "Nota: reemplaza o amplía este texto con la información específica que hayan recopilado para el proyecto."
+    ],
+    "destacados": [
+      {"titulo": "Herencia afrodescendiente", "descripcion": "Tradiciones musicales y dancísticas con raíces africanas, muy presentes en el Carnaval."},
+      {"titulo": "Vínculo con el río", "descripcion": "Su historia está ligada a la actividad portuaria y comercial sobre el Magdalena."},
+      {"titulo": "Vida comunitaria", "descripcion": "Un barrio popular y populoso con una identidad colectiva muy fuerte."}
+    ],
+    "galeria": ["Agregar foto 1", "Agregar foto 2", "Agregar foto 3"]
   },
+
   {
-    "nombre": "San Roque"
+    "id": "barrio-04",
+    "nombre": "San Roque",
+    "color": "#1e6fb8",
+    "colorNombre": "Azul",
+    "descripcion": "Uno de los barrios fundacionales de Barranquilla, con una larga tradición artesanal, comercial y religiosa que aún se conserva en su trazado y sus edificaciones.",
+    "imagen": "imagenes/inicio.jpeg",
+    "altImagen": "Vista del barrio San Roque, Barranquilla",
+    "datos": {
+      "Fundación": "Siglo XIX",
+      "Estilo arquitectónico": "Colonial-republicano",
+      "Localidad": "Centro"
+    },
+    "historia": [
+      "San Roque es uno de los barrios más antiguos de Barranquilla, y toma su nombre del santo patrono al que estaba dedicada su parroquia. Desde el siglo XIX fue un sector de artesanos y comerciantes, con una vida religiosa y social muy activa alrededor de su iglesia y su plaza.",
+      "Su trazado urbano y varias de sus edificaciones conservan huellas de las distintas épocas por las que ha pasado el centro histórico de la ciudad.",
+      "Nota: reemplaza o amplía este texto con la información específica que hayan recopilado para el proyecto."
+    ],
+    "destacados": [
+      {"titulo": "Tradición artesanal", "descripcion": "Un barrio históricamente ligado a oficios y comercio de pequeña escala."},
+      {"titulo": "Vida religiosa", "descripcion": "Su parroquia y sus fiestas patronales han sido un punto de encuentro comunitario por generaciones."},
+      {"titulo": "Memoria del centro", "descripcion": "Parte importante de la historia del núcleo original de Barranquilla."}
+    ],
+    "galeria": ["Agregar foto 1", "Agregar foto 2", "Agregar foto 3"]
   },
+
   {
-    "nombre": "Centro Histórico"
+    "id": "barrio-05",
+    "nombre": "Centro Histórico",
+    "color": "#d6303f",
+    "colorNombre": "Rojo",
+    "descripcion": "El núcleo original de Barranquilla, corazón comercial, bancario y cultural de la ciudad desde finales del siglo XIX.",
+    "imagen": "imagenes/inicio.jpeg",
+    "altImagen": "Vista del barrio Centro Histórico, Barranquilla",
+    "datos": {
+      "Fundación": "Núcleo original de la ciudad",
+      "Estilo arquitectónico": "Republicano / ecléctico",
+      "Localidad": "Centro"
+    },
+    "historia": [
+      "El Centro Histórico es el punto de partida de Barranquilla como ciudad. Alrededor de sus calles y plazas se concentró desde el siglo XIX la actividad comercial, bancaria y portuaria que convirtió a la ciudad en uno de los principales puertos de Colombia sobre el río Magdalena.",
+      "Sus edificaciones combinan influencias republicanas y eclécticas, resultado de la bonanza económica de finales del siglo XIX y principios del XX, cuando comerciantes locales y extranjeros dejaron su huella en la arquitectura del sector.",
+      "Nota: reemplaza o amplía este texto con la información específica que hayan recopilado para el proyecto."
+    ],
+    "destacados": [
+      {"titulo": "Corazón comercial", "descripcion": "Sigue siendo uno de los centros de comercio más activos de la ciudad."},
+      {"titulo": "Arquitectura histórica", "descripcion": "Edificios bancarios y comerciales de principios del siglo XX aún en pie."},
+      {"titulo": "Origen de la ciudad", "descripcion": "El punto donde nació Barranquilla como centro urbano y portuario."}
+    ],
+    "galeria": ["Agregar foto 1", "Agregar foto 2", "Agregar foto 3"]
   }
 ]
