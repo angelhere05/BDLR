@@ -406,23 +406,46 @@ main:focus, h1:focus { outline: none; box-shadow: none; }
   .hero .boton {width: 100%;justify-content: center;}
 
 }
-
 [hidden] { display: none !important; }
-
-.volver {
-  display: inline-flex; align-items: center; gap: 0.4rem;
-  color: var(--texto-suave); text-decoration: none; font-weight: 600; font-size: 0.95rem;
+ 
+/* Colores de acento por barrio (usa las variables que ya tienes en :root) */
+.acento-morado   { --acento: var(--morado); }
+.acento-amarillo { --acento: var(--sol); }
+.acento-verde    { --acento: var(--verde); }
+.acento-azul     { --acento: var(--azul); }
+.acento-rojo     { --acento: var(--rojo); }
+ 
+/* Botón "Volver a barrios" */
+.volver-wrap {
   width: min(100% - 2.5rem, var(--ancho)); margin: 1.5rem auto 0;
 }
-.volver:hover { color: var(--texto); }
-.volver svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2.4; }
-
+.volver {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.55rem 1.15rem 0.55rem 0.9rem;
+  background: var(--papel);
+  border: 1px solid var(--linea);
+  border-radius: 999px;
+  color: var(--texto);
+  font-weight: 600; font-size: 0.92rem;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(15, 33, 64, 0.08);
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+.volver:hover {
+  background: var(--noche); color: #fff; border-color: var(--noche);
+  transform: translateX(-3px);
+}
+.volver svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2.4; flex-shrink: 0; }
+ 
 .barrio-hero { background: var(--noche); color: #fff; overflow: hidden; }
 .barrio-hero-inner {
   width: min(100% - 2.5rem, var(--ancho)); margin-inline: auto;
   padding: 2rem 0 3.5rem;
 }
-.barrio-hero__franja { width: 64px; height: 6px; border-radius: 999px; margin-bottom: 1.2rem; }
+.barrio-hero__franja {
+  width: 64px; height: 6px; border-radius: 999px; margin-bottom: 1.2rem;
+  background: var(--acento);
+}
 .barrio-hero h1 { color: #fff; margin-bottom: 0.3rem; }
 .barrio-hero .eyebrow { color: #c9d5ea; }
 .barrio-hero__imagen {
@@ -430,7 +453,7 @@ main:focus, h1:focus { outline: none; box-shadow: none; }
   aspect-ratio: 21 / 9; box-shadow: 0 24px 60px rgba(0,0,0,0.4);
 }
 .barrio-hero__imagen img { width: 100%; height: 100%; object-fit: cover; }
-
+ 
 .datos-rapidos {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem; width: min(100% - 2.5rem, var(--ancho)); margin: -2.5rem auto 0; position: relative; z-index: 2;
@@ -441,14 +464,17 @@ main:focus, h1:focus { outline: none; box-shadow: none; }
 }
 .dato-card span { display: block; font-size: 0.8rem; color: var(--texto-suave); font-weight: 600; margin-bottom: 0.25rem; }
 .dato-card strong { font-family: var(--fuente-titulo); font-size: 1.05rem; color: var(--noche); }
-
+.dato-color { color: var(--acento); }
+ 
 .barrio-section { padding: 3.5rem 0; }
+.barrio-section--clara { background: var(--papel); }
 .section-texto {
   width: min(100% - 2.5rem, var(--ancho)); margin-inline: auto;
   display: grid; grid-template-columns: 1fr; gap: 1rem; max-width: 780px;
 }
+.section-texto--ancho { max-width: none; }
 .section-texto h2 { margin-bottom: 0.8rem; }
-
+ 
 .lista-destacados {
   width: min(100% - 2.5rem, var(--ancho)); margin: 1.5rem auto 0;
   display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.2rem;
@@ -459,7 +485,7 @@ main:focus, h1:focus { outline: none; box-shadow: none; }
 }
 .destacado-card h3 { margin-bottom: 0.4rem; }
 .destacado-card p { margin: 0; color: var(--texto-suave); font-size: 0.96rem; }
-
+ 
 .galeria {
   width: min(100% - 2.5rem, var(--ancho)); margin: 1.5rem auto 0;
   display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;
@@ -470,10 +496,11 @@ main:focus, h1:focus { outline: none; box-shadow: none; }
 }
 .galeria-item img { width: 100%; height: 100%; object-fit: cover; }
 .galeria-item span { color: #c9d5ea; font-size: 0.85rem; font-weight: 600; text-align: center; padding: 1rem; }
-
+ 
 .cta-mapa {
   width: min(100% - 2.5rem, var(--ancho)); margin: 0 auto;
   background: var(--noche); color: #fff; border-radius: var(--radio);
   padding: 2.5rem 2rem; text-align: center;
 }
+.cta-mapa h2 { color: #fff; }
 .cta-mapa p { color: #c9d5ea; }
