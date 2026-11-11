@@ -1,0 +1,21 @@
+{
+  "titulo": "Acerca de Barranquilla desde la raíz",
+  "introduccion": [
+    "Barranquilla desde la raíz es un proyecto académico de Ingeniería de Software de la Universidad de la Costa.",
+    "Este sitio busca acercar a las personas a la historia, el patrimonio y la identidad cultural de los barrios tradicionales de Barranquilla mediante información histórica y un mapa interactivo."
+  ],
+  "secciones": [
+    {
+      "titulo": "Nuestra propuesta",
+      "descripcion": "Reunir en un solo espacio información sobre los barrios patrimoniales de Barranquilla para facilitar su conocimiento y valoración."
+    },
+    {
+      "titulo": "Explora y descubre",
+      "descripcion": "Conoce las historias, características y elementos culturales de los barrios a través de nuestro mapa interactivo."
+    },
+    {
+      "titulo": "Créditos",
+      "descripcion": "Proyecto académico de Ingeniería de Software de la Universidad de la Costa. El código del sitio se distribuye bajo licencia MIT."
+    }
+  ]
+}
