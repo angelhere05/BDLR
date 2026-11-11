@@ -544,10 +544,10 @@ eccion .seccion_cabecera p {margin: 0 0 1rem;}
 
 .volver {
   display: inline-flex; align-items: center; gap: 0.4rem;
-  color: var(--texto-suave); text-decoration: none; font-weight: 600; font-size: 0.95rem;
-  width: min(100% - 2.5rem, var(--ancho)); margin: 1.5rem auto 0;
+  background: var(--fondo); color: var(--noche); font-weight: 700; text-decoration: none;
+  padding: 0.25rem 1.5rem; border-radius: 999px; border: 0; cursor: pointer;
 }
-.volver:hover { color: var(--texto); }
+.volver:hover { color: var(--texto); transform: translateY(-2px); }
 .volver svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2.4; }
 
 .barrio-hero { background: var(--noche); color: #fff; overflow: hidden; }
