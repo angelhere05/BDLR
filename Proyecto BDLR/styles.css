@@ -593,6 +593,23 @@ main:focus, h1:focus { outline: none; box-shadow: none; }
 
 [hidden] { display: none !important; }
 
+.vista-barrio:not([hidden]),
+.vista-acerca:not([hidden]) {
+  animation: entrada-vista 0.35s ease-out both;
+}
+
+@keyframes entrada-vista {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vista-barrio:not([hidden]),
+  .vista-acerca:not([hidden]) {
+    animation: none;
+  }
+}
+
 .volver {
   display: inline-flex; align-items: center; gap: 0.4rem;
   background: var(--fondo); color: var(--noche); font-weight: 700; text-decoration: none;
