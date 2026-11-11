@@ -10,6 +10,44 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 let barriosLayer;
 
+fetch('acerca.json')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('No se pudo encontrar acerca.json');
+        }
+        return response.json();
+    })
+    .then(acerca => {
+        document.getElementById('acerca-titulo').textContent = acerca.titulo;
+        const introduccion = document.getElementById('acerca-introduccion');
+
+        acerca.introduccion.forEach(texto => {
+            const parrafo = document.createElement('p');
+            parrafo.textContent = texto;
+            introduccion.appendChild(parrafo);
+        });
+
+        const secciones = document.getElementById('acerca-secciones');
+
+        acerca.secciones.forEach(seccion => {
+            const tarjeta = document.createElement('article');
+            tarjeta.className = 'acerca-tarjeta';
+
+            const tituloSeccion = document.createElement('h3');
+            tituloSeccion.textContent = seccion.titulo;
+
+            const descripcion = document.createElement('p');
+            descripcion.textContent = seccion.descripcion;
+
+            tarjeta.append(tituloSeccion, descripcion);
+            secciones.appendChild(tarjeta);
+        });
+
+    })
+    .catch(error => {
+        console.error('Error cargando la sección Acerca de:', error);
+    });
+
 function resaltarBarrio(nombre) {
 
     if (!barriosLayer) return;
@@ -345,13 +383,16 @@ document.addEventListener("click", (e) => {
 function mostrarVista(destino) {
 
     const esBarrio = destino.startsWith('barrio-');
+    const esAcerca = destino === 'acerca';
 
     document.querySelectorAll('.vista-barrio').forEach(function (vista) {
         vista.hidden = true;
     });
 
+    document.getElementById('vista-acerca').hidden = !esAcerca;
+
     document.querySelectorAll('main > :not(.vista-barrio)').forEach(function (el) {
-        el.style.display = esBarrio ? 'none' : '';
+        el.style.display = esBarrio || esAcerca ? 'none' : '';
     });
 
     if (esBarrio) {
@@ -363,6 +404,10 @@ function mostrarVista(destino) {
         if (barrio) {
             cargarBarrio(barrio);
         }
+
+        window.scrollTo(0, 0);
+
+    } else if (esAcerca) {
 
         window.scrollTo(0, 0);
 
