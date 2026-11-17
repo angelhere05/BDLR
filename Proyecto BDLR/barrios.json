@@ -70,25 +70,32 @@
     "nombre": "Rebolo",
     "color": "#1f8a5f",
     "colorNombre": "Verde",
-    "descripcion": "Uno de los barrios más antiguos y populosos de Barranquilla, con una fuerte herencia cultural afrodescendiente y una vida comunitaria muy activa.",
-    "imagen": "imagenes/inicio.jpeg",
+    "descripcion": "Uno de los barrios más antiguos, populares y resilientes de Barranquilla. Reconocido históricamente como el corazón del \"barrio arriba\", es símbolo de la identidad obrera, el comercio popular, la pasión futbolera y la alegría del Carnaval, hoy protagonista de una profunda transformación urbana y social alrededor de su emblemático arroyo.",
+    "imagen": "imagenes/rebolo_encabezado.jpg",
     "altImagen": "Vista del barrio Rebolo, Barranquilla",
     "datos": {
-      "Fundación": "Siglo XIX",
-      "Estilo arquitectónico": "Popular tradicional",
-      "Localidad": "Suroccidente"
+      "Fundación": "Mediados del siglo XIX",
+      "Estilo arquitectónico": "Vernáculo popular / Republicano temprano",
+      "Localidad": "Suroriente"
     },
     "historia": [
-      "Rebolo es uno de los barrios fundacionales de Barranquilla, ubicado cerca de la ribera del río Magdalena. Creció históricamente como un sector obrero y portuario, habitado por familias trabajadoras que sostuvieron buena parte de la actividad comercial y fluvial de la ciudad en sus primeras décadas.",
-      "Tiene una fuerte herencia cultural afrodescendiente, visible hoy en sus tradiciones musicales, danzas y en la manera en que la comunidad vive el Carnaval de Barranquilla.",
-      "Nota: reemplaza o amplía este texto con la información específica que hayan recopilado para el proyecto."
+      "Surgido a mediados del siglo XIX en la zona suroriental de la ciudad, su nombre proviene de la denominación fluvial usada por navegantes y habitantes para distinguir el sector ubicado \"aguas arriba\" del río Magdalena (conocido entonces como Barrio Arriba del Río), en contraposición a Barrio Abajo. Durante décadas creció ligado a la actividad portuaria, artesanal y comercial en torno a los caños y al desaparecido Mercado Público.",
+      "A lo largo del siglo XX, Rebolo se consolidó como un bastión de la cultura popular barranquillera, pero también enfrentó históricamente problemáticas de marginalidad e inundaciones causadas por el arroyo de Rebolo, el más caudaloso de la ciudad. Sin embargo, el espíritu comunitario de sus habitantes mantuvo viva su riqueza cultural a través de verbenas, picós (sistemas de sonido tradicionales), casetas de Carnaval y un fervor deportivo incomparable alrededor del Junior de Barranquilla y el boxeo.",
+      "De sus calles y canchas han surgido figuras icónicas para el deporte y la música del país, como los futbolistas Víctor Danilo Pacheco, Marcos Coll (autor del único gol olímpico en la historia de los mundiales), Iván René Valenciano (formado en sus canchas populares), campeones mundiales de boxeo como Fidel Bassa y Tomás Molinares, así como leyendas de la música tropical y el Carnaval como Aníbal Velásquez y el gestor cultural Efraín Mejía, fundador de la Cumbiamba La Revoltosa."
     ],
     "destacados": [
-      {"titulo": "Herencia afrodescendiente", "descripcion": "Tradiciones musicales y dancísticas con raíces africanas, muy presentes en el Carnaval."},
-      {"titulo": "Vínculo con el río", "descripcion": "Su historia está ligada a la actividad portuaria y comercial sobre el Magdalena."},
-      {"titulo": "Vida comunitaria", "descripcion": "Un barrio popular y populoso con una identidad colectiva muy fuerte."}
+      {"titulo": "Templo del Folclor y la Verbena", "descripcion": "Es cuna de agrupaciones patrimoniales del Carnaval de Barranquilla como la Cumbiamba La Revoltosa y la Danza del Congo Reformado, además de ser epicentro histórico de la cultura picotera y la música verbenera del Caribe."},
+      {"titulo": "Semillero de glorias del deporte", "descripcion": "Sus calles y canchas de arena forjaron a leyendas del fútbol colombiano y del boxeo mundial, convirtiendo al barrio en sinónimo de talento deportivo popular."},
+      {"titulo": "Transformación urbana del Arroyo Rebolo", "descripcion": "Actualmente vive la renovación urbanística más ambiciosa del suroriente con la canalización del arroyo de Rebolo y la construcción de un gran parque lineal, canchas deportivas y espacios públicos que dignifican el entorno y conectan el barrio con el resto de la ciudad."}
     ],
-    "galeria": ["Agregar foto 1", "Agregar foto 2", "Agregar foto 3"]
+    "galeria": [
+    {"imagen": "imagenes/rebolo_galeria1.jpg", "pie": "Rebolo es cuna del Carnaval, inculcándolo así de generación en generación."},
+    {"imagen": "imagenes/rebolo_galeria2.jpg", "pie": "Antiguo Rebolo en épocas marginales."},
+    {"imagen": "imagenes/rebolo_galeria3.avif", "pie": "\"Picó\": Parte de su cultura alegre."},
+    {"imagen": "imagenes/rebolo_galeria4.webp", "pie": "El Junior de Barranquilla: Equipo de fútbol que mueve al barrio."},
+    {"imagen": "imagenes/rebolo_galeria5.jpeg", "pie": "Malecón de Rebolo, una apuesta por la seguridad y dignidad de Rebolo."},
+    {"imagen": "imagenes/rebolo_galeria6.jpeg", "pie": "Fidel Bassa: Campeón de Boxeo Mundial rebolero."}
+    ]
   },
 
   {
