@@ -4,26 +4,33 @@
     "nombre": "El Prado",
     "color": "#7b3fa0",
     "colorNombre": "Morado",
-    "descripcion": "Uno de los barrios más emblemáticos de Barranquilla, reconocido por sus grandes casonas republicanas, sus calles arborizadas y por ser el primer proyecto de \"ciudad jardín\" de la ciudad.",
-    "imagen": "imagenes/inicio.jpeg",
+    "descripcion": "Conocido afectuosamente por los barranquilleros como el \"Viejo Prado\", es el barrio más emblemático e histórico de Barranquilla. Reconocido por sus majestuosas mansiones republicanas, sus amplios bulevares arborizados y su diseño bioclimático, representa un hito en la historia del urbanismo al haber sido la primera urbanización moderna planificada con capital privado en Colombia y pionera del modelo \"ciudad jardín\" en América Latina.",
+    "imagen": "imagenes/elprado_encabezado.jpg",
     "altImagen": "Vista del barrio El Prado, Barranquilla",
     "datos": {
-      "Fundación": "Década de 1920",
-      "Estilo arquitectónico": "Republicano / Ciudad jardín",
+      "Fundación": "1920 (Compañía Urbanizadora El Prado)",
+      "Estilo arquitectónico": "Republicano / Art Déco / Ciudad jardín",
       "Localidad": "Norte-Centro Histórico"
     },
     "historia": [
-      "El Prado nació como un proyecto urbanístico pensado para las familias de mayores recursos de Barranquilla en un momento de auge económico de la ciudad, ligado al comercio portuario sobre el río Magdalena. Se diseñó siguiendo el modelo de \"ciudad jardín\", con calles amplias, andenes arborizados y grandes zonas verdes, algo poco común en el resto de la ciudad en esa época.",
-      "Con el tiempo se convirtió en el barrio residencial de referencia de la élite barranquillera, y hoy conserva buena parte de esa identidad en sus mansiones, clubes sociales y edificaciones institucionales.",
-      "Nota: reemplaza o amplía este texto con la información específica que hayan recopilado para el proyecto."
+      "A comienzos del siglo XX, impulsados por la bonanza portuaria sobre el río Magdalena y el nacimiento de la aviación comercial en la ciudad, los empresarios estadounidenses Karl C. Parrish y su hermano Robert adquirieron cerca de 275 hectáreas de una antigua finca ganadera. El 12 de marzo de 1920 fundaron la Compañía Urbanizadora El Prado con el objetivo de desarrollar un parque residencial moderno que rompiera con el crecimiento desordenado de la época.",
+      "El diseño estuvo a cargo del urbanista estadounidense Ray Wyrick, quien aplicó un enfoque bioclimático inédito en el país: trazó calles anchas, redes subterráneas de servicios públicos, antejardines generosos y bulevares orientados estratégicamente para canalizar los vientos alisios y las brisas del río, garantizando frescura natural en el trópico.",
+      "Durante las décadas siguientes, el sector se convirtió en el epicentro social, intelectual y empresarial de Barranquilla, acogiendo tanto a familias locales como a colonias extranjeras (alemana, italiana, estadounidense y sirio-libanesa). Sus terrazas fueron hogar e inspiración de personajes clave como el escritor Álvaro Cepeda Samudio —integrante del Grupo de Barranquilla—, la escritora Marvel Moreno —quien retrató el barrio en su novela En diciembre llegaban las brisas—, el expresidente Alberto Pumarejo y pioneros de la industria y la banca como los Obregón, De la Rosa y Santo Domingo."
     ],
     "destacados": [
-      {"titulo": "Arquitectura republicana", "descripcion": "Casonas de principios del siglo XX con influencias europeas, hoy protegidas como patrimonio."},
-      {"titulo": "Calles arborizadas", "descripcion": "Uno de los sectores con mayor cobertura vegetal urbana de Barranquilla."},
-      {"titulo": "Vida cultural", "descripcion": "Hogar de instituciones, galerías y espacios que mantienen viva la memoria del barrio."}
+      {"titulo": "Patrimonio Cultural de la Nación", "descripcion": "Declarado Bien de Interés Cultural del Ámbito Nacional en 2005 (Resolución 0087) y protegido por un Plan Especial de Manejo y Protección (PEMP). Conserva cerca de 300 inmuebles diseñados por arquitectos como Manuel Carrerá y Leslie Arbouin en estilos neoclásico, neomediterráneo, neomudéjar y art déco."},
+      {"titulo": "Hitos monumentales", "descripcion": "Alberga joyas arquitectónicas e históricas fundamentales para el Caribe colombiano, como el Hotel El Prado (inaugurado en 1930 como el primer hotel turístico moderno de América Latina), el edificio de la Facultad de Bellas Artes y la antigua mansión Freund Strunz, sede del Museo Romántico."},
+      {"titulo": "Revitalización y Distrito Creativo", "descripcion": "Actualmente lidera la renovación cultural de la ciudad mediante el Distrito Creativo Prado, integrando galerías de arte, cafés culturales, muralismo en sus callejones y la restauración integral de sus espacios patrimoniales."}
     ],
-    "galeria": ["Agregar foto 1", "Agregar foto 2", "Agregar foto 3"]
-  },
+    "galeria": [
+    {"imagen": "imagenes/elprado_galeria1.jpeg", "pie": "Murales artísticos de los callejones de El Prado."},
+    {"imagen": "imagenes/elprado_galeria2.jpg", "pie": "Arquitectura característica de las casonas del lugar."},
+    {"imagen": "imagenes/elprado_galeria3.jpg", "pie": "Vista de una de las calles emblemáticas en el Viejo Prado."},
+    {"imagen": "imagenes/elprado_galeria4.jpg", "pie": "Hotel el Prado: Joya del barrio."},
+    {"imagen": "imagenes/elprado_galeria5.webp", "pie": "Marvel Moreno, escritora oriunda de El Prado."},
+    {"imagen": "imagenes/elprado_galeria6.jpg", "pie": "Monumento al inicio de la aviación colombiana en El Parque De Los Fundadores."}
+  ]
+},
 
   {
     "id": "barrio-02",

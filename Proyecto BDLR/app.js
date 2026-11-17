@@ -316,27 +316,112 @@ function cargarBarrio(barrio) {
         destacados.appendChild(tarjeta);
     });
 
-    galeria.innerHTML = '';
+        galeria.innerHTML = '';
 
-    barrio.galeria.forEach(texto => {
+        let lightbox = document.getElementById('galeria-lightbox');
 
-        const item = document.createElement('div');
+        if (!lightbox) {
+            lightbox = document.createElement('dialog');
+            lightbox.id = 'galeria-lightbox';
+            lightbox.className = 'galeria-lightbox';
+            
+            const imagenGrande = document.createElement('img');
+            imagenGrande.id = 'galeria-imagen-grande';
 
-        item.className = 'galeria-item';
+            const cerrar = document.createElement('button');
+            cerrar.className = 'galeria-cerrar';
+            cerrar.type = 'button';
+            cerrar.textContent = '×';
+            cerrar.setAttribute('aria-label', 'Cerrar imagen');
 
-        const span = document.createElement('span');
-        span.textContent = texto;
+            cerrar.addEventListener('click', () => {
+                lightbox.close();
+            });
 
-        item.appendChild(span);
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    lightbox.close();
+                }
+            });
 
-        galeria.appendChild(item);
-    });
+            lightbox.appendChild(cerrar);
+            lightbox.appendChild(imagenGrande);
 
-    cta.textContent =
-        `Ubica ${barrio.nombre} en el mapa interactivo junto a los demás barrios patrimoniales.`;
+            document.body.appendChild(lightbox);
+        }
 
-    vista.hidden = false;
-}
+         barrio.galeria.forEach(foto => {
+
+            const rutaImagen = typeof foto === 'string'
+                ? foto
+                : foto.imagen;
+
+            const pieFoto = typeof foto === 'object'
+                ? foto.pie
+                : '';
+
+            if (!rutaImagen || rutaImagen.startsWith('Agregar foto')) {
+                return;
+            }
+
+            const item = document.createElement('div');
+            item.className = 'galeria-item';
+
+            item.setAttribute('role', 'button');
+            item.setAttribute('tabindex', '0');
+            item.setAttribute('aria-label', 'Ampliar fotografía');
+
+            const img = document.createElement('img');
+
+            img.src = rutaImagen;
+            img.alt = pieFoto || `Fotografía del barrio ${barrio.nombre}`;
+            img.loading = 'lazy';
+
+            item.appendChild(img);
+
+            if (pieFoto) {
+                const overlay = document.createElement('div');
+                overlay.className = 'galeria-overlay';
+
+                const pie = document.createElement('p');
+                pie.className = 'galeria-pie';
+                pie.textContent = pieFoto;
+
+                overlay.appendChild(pie);
+                item.appendChild(overlay);
+            }
+
+            const ampliarImagen = () => {
+                const imagenGrande = document.getElementById(
+                    'galeria-imagen-grande'
+                );
+
+                imagenGrande.src = img.src;
+                imagenGrande.alt = img.alt;
+
+                lightbox.showModal();
+            };
+
+            item.addEventListener('click', ampliarImagen);
+            item.addEventListener('keydown', (e) => {
+
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    ampliarImagen();
+                }
+
+            });
+
+            galeria.appendChild(item);
+
+        });
+
+
+            cta.textContent =
+                `Ubica ${barrio.nombre} en el mapa interactivo junto a los demás barrios patrimoniales.`;
+
+            vista.hidden = false;
+        }
 
 const menuBtn = document.querySelector(".menu-btn");
 const cabecera = document.querySelector(".cabecera");
