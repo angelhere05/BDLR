@@ -37,25 +37,32 @@
     "nombre": "Barrio Abajo",
     "color": "#f6b91b",
     "colorNombre": "Amarillo",
-    "descripcion": "Uno de los barrios más antiguos de Barranquilla, reconocido como cuna de tradiciones del Carnaval y de la identidad popular de la ciudad.",
-    "imagen": "imagenes/inicio.jpeg",
+    "descripcion": "Considerado el corazón cultural y folclórico de Barranquilla, es uno de los sectores más antiguos y tradicionales de la ciudad. Reconocido como la cuna de grandes expresiones del Carnaval, el fútbol y el béisbol colombiano, hoy se transforma en un museo a cielo abierto donde la memoria obrera y portuaria convive con el arte urbano contemporáneo.",
+    "imagen": "imagenes/barrioabajo_encabezado.png",
     "altImagen": "Vista del barrio Barrio Abajo, Barranquilla",
     "datos": {
-      "Fundación": "Siglo XIX",
-      "Estilo arquitectónico": "Vernáculo caribeño",
+      "Fundación": "Mediados del siglo XIX (hacia 1857)",
+      "Estilo arquitectónico": "Vernáculo caribeño / Republicano temprano / Industrial",
       "Localidad": "Centro-Occidente"
     },
     "historia": [
-      "Barrio Abajo es uno de los sectores fundacionales de Barranquilla, con calles trazadas desde el siglo XIX. Su nombre viene de su ubicación topográfica, en la parte baja de la ciudad hacia el río Magdalena, zona donde se asentaron desde muy temprano artesanos, comerciantes y familias que dieron forma a buena parte de la identidad popular barranquillera.",
-      "Es considerado por muchos como uno de los lugares de origen de tradiciones que hoy son símbolo del Carnaval de Barranquilla, con una fuerte presencia de grupos folclóricos y música tradicional.",
-      "Nota: reemplaza o amplía este texto con la información específica que hayan recopilado para el proyecto."
+      "El origen de Barrio Abajo se remonta a mediados del siglo XIX, cuando el crecimiento comercial de Barranquilla impulsó la expansión urbana al norte del caño de Las Compañías y en cercanías al río Magdalena. Su nombre proviene de la topografía fluvial: los navegantes y habitantes llamaban \"barrio abajo\" a la zona situada aguas abajo del río, en contraposición a \"barrio arriba\" (hoy sector de Rebolo y San Roque).",
+      "Durante décadas fue el hogar de trabajadores portuarios, ferroviarios, artesanos y familias afrodescendientes e inmigrantes que forjaron la identidad popular de la ciudad. Por sus calles nació el fútbol en Colombia a comienzos del siglo XX y se gestó una profunda tradición beisbolera y boxística. Además, sus patios y esquinas fueron el punto de partida de comparsas, letanías y danzas emblemáticas del Carnaval de Barranquilla, como la Danza del Garabato, los Congos y las marimondas.",
+      "A lo largo de su historia ha sido cuna y refugio de figuras fundamentales para el deporte y la cultura del país, entre ellas los beisbolistas Édgar Rentería y Donovan Solano, la cantadora y folklorista Petrona Martínez (vinculada a su movimiento cultural), el dramaturgo y gestor cultural Misael Torres, y hacedores históricos del Carnaval como César \"Paragüita\" Morales, creador de las marimondas de Barrio Abajo."
     ],
     "destacados": [
-      {"titulo": "Cuna del Carnaval", "descripcion": "Fuerte tradición de comparsas, danzas y grupos folclóricos que participan cada año en el Carnaval."},
-      {"titulo": "Casas tradicionales", "descripcion": "Viviendas de un piso con colores vivos, típicas de la arquitectura popular caribeña."},
-      {"titulo": "Identidad barrial", "descripcion": "Un fuerte sentido de comunidad y orgullo por sus raíces, transmitido de generación en generación."}
+      {"titulo": "Cuna del Carnaval y el Deporte", "descripcion": "Es el epicentro de la tradición folclórica barranquillera —hogar de la icónica comparsa Las Marimondas de Barrio Abajo y sede de la Casa del Carnaval— y el lugar donde se jugaron los primeros partidos de fútbol organizados en Colombia hacia 1906."},
+      {"titulo": "Arquitectura vernácula e industrial", "descripcion": "Conserva casas tradicionales de madera y mampostería con techos altos, puertas caladas y amplios patios vecinales, junto a antiguas bodegas ferroviarias e industriales como el complejo de la Antigua Aduana y la Estación Montoya."},
+      {"titulo": "Museo a Cielo Abierto y Revitalización", "descripcion": "Sus fachadas conforman una galería urbana gracias a festivales de muralismo que retratan a sus personajes y tradiciones, integrándose a proyectos de renovación como el Corredor Cultural de Barrio Abajo y la Fábrica de Cultura."}
     ],
-    "galeria": ["Agregar foto 1", "Agregar foto 2", "Agregar foto 3"]
+    "galeria": [
+    {"imagen": "imagenes/barrioabajo_galeria1.jpeg", "pie": "Iglesia Sagrado Corazón de Jesús."},
+    {"imagen": "imagenes/barrioabajo_galeria2.jpg", "pie": "Marimondas del Barrio Abajo."},
+    {"imagen": "imagenes/barrioabajo_galeria3.jpg", "pie": "Viejo edificio de la Aduana, joya arquitectónica de la ciudad."},
+    {"imagen": "imagenes/barrioabajo_galeria4.jpg", "pie": "Una vista al pasado del Barrio Abajo."},
+    {"imagen": "imagenes/barrioabajo_galeria5.jpg", "pie": "Edgar Rentería, beisbolista estrella del barrio."},
+    {"imagen": "imagenes/barrioabajo_galeria6.jpeg", "pie": "Museo al Cielo Abierto del Barrio Abajo para dar más visibilidad a su cultura."}
+    ]
   },
 
   {
