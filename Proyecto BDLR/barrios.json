@@ -103,25 +103,32 @@
     "nombre": "San Roque",
     "color": "#1e6fb8",
     "colorNombre": "Azul",
-    "descripcion": "Uno de los barrios fundacionales de Barranquilla, con una larga tradición artesanal, comercial y religiosa que aún se conserva en su trazado y sus edificaciones.",
-    "imagen": "imagenes/inicio.jpeg",
+    "descripcion": "Uno de los barrios fundacionales y más tradicionales de Barranquilla, nacido alrededor de su emblemática iglesia neogótica. Reconocido por haber sido el primer gran polo comercial, educativo y residencial del suroriente en el siglo XIX, hoy conserva un invaluable patrimonio arquitectónico e histórico ligado al desarrollo moderno de la ciudad.",
+    "imagen": "imagenes/sanroque_encabezado.jpg",
     "altImagen": "Vista del barrio San Roque, Barranquilla",
     "datos": {
-      "Fundación": "Siglo XIX",
-      "Estilo arquitectónico": "Colonial-republicano",
-      "Localidad": "Centro"
+      "Fundación": "Mediados del siglo XIX",
+      "Estilo arquitectónico": "Neogótico / Republicano / Vernáculo caribeño",
+      "Localidad": "Suroriente"
     },
     "historia": [
-      "San Roque es uno de los barrios más antiguos de Barranquilla, y toma su nombre del santo patrono al que estaba dedicada su parroquia. Desde el siglo XIX fue un sector de artesanos y comerciantes, con una vida religiosa y social muy activa alrededor de su iglesia y su plaza.",
-      "Su trazado urbano y varias de sus edificaciones conservan huellas de las distintas épocas por las que ha pasado el centro histórico de la ciudad.",
-      "Nota: reemplaza o amplía este texto con la información específica que hayan recopilado para el proyecto."
+      "San Roque surgió a mediados del siglo XIX como la expansión natural hacia el sur del primitivo núcleo urbano de Barranquilla (el actual Centro). Su consolidación estuvo marcada por la creación de la Parroquia de San Roque en 1853, impulsada por el presbítero Rafael Ruiz y la devoción popular hacia el santo patrono tras la epidemia de cólera de 1849 que azotó a la ciudad.",
+      "Durante finales del siglo XIX y principios del XX, se convirtió en un sector próspero donde convergieron familias comerciantes, artesanos e inmigrantes (especialmente de origen sirio-libanés, italiano y español), así como importantes instituciones educativas y hospitalarias. En sus calles funcionaron centros pioneros como el Colegio San Roque y el histórico Hospital de Caridad (luego Hospital General de Barranquilla), consolidándolo como eje cívico del llamado \"barrio arriba\".",
+      "A lo largo de su historia estuvo vinculado a figuras ilustres de la medicina, la política y la cultura del Caribe colombiano, como el médico y filántropo Ramón Vinyes (el célebre \"sabio catalán\" de Cien años de soledad, quien desarrolló parte de su actividad intelectual y librera en el entorno céntrico cercano), el médico pionero Eusebio de la Hoz, el líder político y expresidente Rafael Núñez (frecuente visitante de la ciudad y sus círculos sociales) y destacados músicos y hacedores tradicionales del Carnaval barranquillero."
     ],
     "destacados": [
-      {"titulo": "Tradición artesanal", "descripcion": "Un barrio históricamente ligado a oficios y comercio de pequeña escala."},
-      {"titulo": "Vida religiosa", "descripcion": "Su parroquia y sus fiestas patronales han sido un punto de encuentro comunitario por generaciones."},
-      {"titulo": "Memoria del centro", "descripcion": "Parte importante de la historia del núcleo original de Barranquilla."}
+      {"titulo": "La Iglesia de San Roque", "descripcion": "Templo emblemático de estilo neogótico cuya construcción inició en 1854 y fue culminada a comienzos del siglo XX. Declarada Bien de Interés Cultural, sus agujas y vitrales son uno de los referentes arquitectónicos más reconocibles del suroriente."},
+      {"titulo": "Eje Comercial e Inmigrante", "descripcion": "Sus calles (como la calle 30 y la carrera 38) fueron escenario de la llegada de las primeras colonias inmigrantes que impulsaron el comercio textil, ferretero e industrial de Barranquilla, dejando casonas republicanas con balcones de hierro forjado y patios interiores."},
+      {"titulo": "Recuperación Patrimonial", "descripcion": "El sector forma parte de los planes de revitalización del entorno del Centro Histórico y el Hospital General de Barranquilla, buscando rescatar sus plazas, templos y corredores comerciales tradicionales como memoria viva de la ciudad decimonónica."}
     ],
-    "galeria": ["Agregar foto 1", "Agregar foto 2", "Agregar foto 3"]
+    "galeria": [
+    {"imagen": "imagenes/sanroque_galeria1.jpg", "pie": "Iglesia San Roque."},
+    {"imagen": "imagenes/sanroque_galeria2.jpg", "pie": "Colegio San Roque."},
+    {"imagen": "imagenes/sanroque_galeria3.jpg", "pie": "Antigua Iglesia de San Roque, joya arquitectónica del barrio."},
+    {"imagen": "imagenes/sanroque_galeria4.jpg", "pie": "San Roque, santo en el cual se basa el barrio y su iglesia."},
+    {"imagen": "imagenes/sanroque_galeria5.webp", "pie": "Sede sena de la salud en el barrio San Roque."},
+    {"imagen": "imagenes/sanroque_galeria6.jpg", "pie": "Antiguamente, Hospital de Caridad (ahora Hospital General de Barranquilla)."}
+    ]
   },
 
   {
