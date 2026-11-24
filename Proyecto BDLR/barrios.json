@@ -136,24 +136,31 @@
     "nombre": "Centro Histórico",
     "color": "#d6303f",
     "colorNombre": "Rojo",
-    "descripcion": "El núcleo original de Barranquilla, corazón comercial, bancario y cultural de la ciudad desde finales del siglo XIX.",
-    "imagen": "imagenes/inicio.jpeg",
+    "descripcion": "El núcleo fundacional y comercial donde nació Barranquilla. Declarado Bien de Interés Cultural del Ámbito Nacional, es el testimonio vivo de la época dorada portuaria e industrial del siglo XIX y principios del XX, cuando la ciudad se consolidó como la \"Puerta de Oro de Colombia\"",
+    "imagen": "imagenes/centro_encabezado.jpeg",
     "altImagen": "Vista del barrio Centro Histórico, Barranquilla",
     "datos": {
-      "Fundación": "Núcleo original de la ciudad",
-      "Estilo arquitectónico": "Republicano / ecléctico",
-      "Localidad": "Centro"
+      "Fundación": "Siglo XVII (1629, origen como sitio de libres) / Villa en 1813",
+      "Estilo arquitectónico": "Republicano / Neoclásico / Art Déco / Movimiento Moderno",
+      "Localidad": "Norte-Centro Histórico"
     },
     "historia": [
-      "El Centro Histórico es el punto de partida de Barranquilla como ciudad. Alrededor de sus calles y plazas se concentró desde el siglo XIX la actividad comercial, bancaria y portuaria que convirtió a la ciudad en uno de los principales puertos de Colombia sobre el río Magdalena.",
-      "Sus edificaciones combinan influencias republicanas y eclécticas, resultado de la bonanza económica de finales del siglo XIX y principios del XX, cuando comerciantes locales y extranjeros dejaron su huella en la arquitectura del sector.",
-      "Nota: reemplaza o amplía este texto con la información específica que hayan recopilado para el proyecto."
+      "El Centro Histórico corresponde al primitivo asentamiento de las Sabanas de Camacho, surgido hacia 1629 alrededor de antiguas haciendas ganaderas y consolidado en 1813 cuando recibió el título de Villa por su apoyo a la causa independentista. A diferencia de otras ciudades coloniales españolas trazadas en cuadrícula rígida, su crecimiento fue orgánico y espontáneo, impulsado por el comercio fluvial y marítimo.",
+      "Entre finales del siglo XIX y la primera mitad del siglo XX, el sector vivió una transformación extraordinaria gracias a la construcción del muelle de Puerto Colombia, el ferrocarril y la llegada masiva de inmigrantes europeos, norteamericanos y de Medio Oriente. En sus calles se levantaron sedes bancarias, almacenes, teatros y edificios gubernamentales que introdujeron la modernidad arquitectónica a Colombia.",
+      "Sus cafés, librerías y redacciones de periódicos fueron el punto de encuentro de figuras fundamentales de la literatura, el periodismo y las artes, destacando el célebre Grupo de Barranquilla, integrado por Gabriel García Márquez, Ramón Vinyes, Alfonso Fuenmayor, Germán Vargas y Álvaro Cepeda Samudio, quienes se reunían en lugares icónicos como la Librería Mundo, el Café Colombia y el bar La Cueva (en sus inmediaciones)."
     ],
     "destacados": [
-      {"titulo": "Corazón comercial", "descripcion": "Sigue siendo uno de los centros de comercio más activos de la ciudad."},
-      {"titulo": "Arquitectura histórica", "descripcion": "Edificios bancarios y comerciales de principios del siglo XX aún en pie."},
-      {"titulo": "Origen de la ciudad", "descripcion": "El punto donde nació Barranquilla como centro urbano y portuario."}
+      {"titulo": "Patrimonio Nacional y diversidad de estilos", "descripcion": "Declarado Bien de Interés Cultural del Ámbito Nacional en 1999 (Resolución 1614). Concentra un valioso catálogo de arquitectura republicana, art déco y moderna con joyas como el Edificio de la Aduana, la Intendencia Fluvial, el Teatro Amira de la Rosa, el Edificio García y la Iglesia de San Nicolás de Tolentino (patrono de la ciudad)."},
+      {"titulo": "Cuna del periodismo y las letras del Caribe", "descripcion": "En sus manzanas funcionaron las redacciones de diarios históricos como El Heraldo, La Prensa y El Nacional, sirviendo de taller creativo para Gabriel García Márquez en sus inicios como periodista antes de escribir sus grandes obras."},
+      {"titulo": "Revitalización urbana y recuperación del espacio público", "descripcion": "Actualmente atraviesa un ambicioso plan de recuperación patrimonial con proyectos como la peatonalización del Paseo de Bolívar, la restauración de la Plaza de San Nicolás, la recuperación de los caños y mercados públicos, y la conexión directa con el Gran Malecón del Río."}
     ],
-    "galeria": ["Agregar foto 1", "Agregar foto 2", "Agregar foto 3"]
+    "galeria": [
+      {"imagen": "imagenes/centro_galeria1.jpg", "pie": "Orillas del caño de la Tablaza"},
+      {"imagen": "imagenes/centro_galeria2.jpeg", "pie": "Intendencia Fluvial de Barranquilla"},
+      {"imagen": "imagenes/centro_galeria3.jpeg", "pie": "Libreria Mundo"},
+      {"imagen": "imagenes/centro_galeria4.jpeg", "pie": "Antigua Aduana de Barranquilla"},
+      {"imagen": "imagenes/centro_galeria5.jpeg", "pie": "Edificio Garcia"},
+      {"imagen": "imagenes/centro_galeria6.jpeg", "pie": "Teatro Amira de la Rosa"}
+    ]
   }
 ]
